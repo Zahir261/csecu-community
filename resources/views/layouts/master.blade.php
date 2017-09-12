@@ -6,7 +6,7 @@
               integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     </head>
     <body>
-    @include('includes.header')
+    @include('includes.headers')
         <div class="container">
             @yield('content')
         </div>

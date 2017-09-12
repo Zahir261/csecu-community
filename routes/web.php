@@ -14,3 +14,18 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/registration', [
+	'uses' => 'UserController@postRegistration',
+	'as' => 'registration'
+	]);
+
+Route::post('/login', [
+	'uses' => 'UserController@postLogin',
+	'as' => 'login'
+]);
+
+Route::get('/dashboard', [
+	'uses' => 'UserController@getDashboard',
+	'as' => 'dashboard'
+]);
